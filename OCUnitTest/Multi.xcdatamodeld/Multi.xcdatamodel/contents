@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11D50" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="BZ" representedClassName="BZ" syncable="YES">
+        <attribute name="kind" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="shuyu" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Car" inverseName="baohan" inverseEntity="Car" syncable="YES"/>
+    </entity>
+    <entity name="Car" representedClassName="Car" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="baohan" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="BZ" inverseName="shuyu" inverseEntity="BZ" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Car" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="BZ" positionX="-270" positionY="204" width="128" height="75"/>
+    </elements>
+</model>
