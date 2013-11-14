@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A2D377E1823A08F00369A24 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D377D1823A08F00369A24 /* XMLReader.m */; };
+		2A2D37811823A09B00369A24 /* XMLWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D37801823A09B00369A24 /* XMLWriter.m */; };
+		2A2D37841823A0A400369A24 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D37821823A0A400369A24 /* README.md */; };
+		2A2D37851823A0A400369A24 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 2A2D37831823A0A400369A24 /* README */; };
+		2A2D37881823A0CF00369A24 /* XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D37871823A0CF00369A24 /* XML.m */; };
 		5F197358166DC6D100E27A5B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F197357166DC6D100E27A5B /* StoreKit.framework */; };
 		5F29C77D165B93B800B90D3C /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F29C77C165B93B800B90D3C /* 4.png */; };
 		5F5609DE165A96F800E9989D /* TabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5609DD165A96F800E9989D /* TabBarView.m */; };
@@ -101,6 +106,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A2D377C1823A08F00369A24 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		2A2D377D1823A08F00369A24 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		2A2D377F1823A09B00369A24 /* XMLWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLWriter.h; sourceTree = "<group>"; };
+		2A2D37801823A09B00369A24 /* XMLWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLWriter.m; sourceTree = "<group>"; };
+		2A2D37821823A0A400369A24 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		2A2D37831823A0A400369A24 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		2A2D37861823A0CF00369A24 /* XML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XML.h; sourceTree = "<group>"; };
+		2A2D37871823A0CF00369A24 /* XML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XML.m; sourceTree = "<group>"; };
+		2AE74A1F1834BA1F00595926 /* gcd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gcd.h; sourceTree = "<group>"; };
 		5F197357166DC6D100E27A5B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		5F29C77C165B93B800B90D3C /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		5F5609DC165A96F800E9989D /* TabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarView.h; sourceTree = "<group>"; };
@@ -231,6 +245,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A2D377B1823A05B00369A24 /* XMLWriter-Reader */ = {
+			isa = PBXGroup;
+			children = (
+				2A2D37821823A0A400369A24 /* README.md */,
+				2A2D37831823A0A400369A24 /* README */,
+				2A2D377F1823A09B00369A24 /* XMLWriter.h */,
+				2A2D37801823A09B00369A24 /* XMLWriter.m */,
+				2A2D377C1823A08F00369A24 /* XMLReader.h */,
+				2A2D377D1823A08F00369A24 /* XMLReader.m */,
+			);
+			name = "XMLWriter-Reader";
+			sourceTree = "<group>";
+		};
 		5F29C77E165BB44100B90D3C /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,6 +377,7 @@
 		5FF350C7164F7DA400CD51D9 /* my_library */ = {
 			isa = PBXGroup;
 			children = (
+				2AE74A1F1834BA1F00595926 /* gcd.h */,
 				5F90F3F61654FF43001157BD /* Push.h */,
 				5F90F3F71654FF43001157BD /* Push.m */,
 				5FA544671651320300DB0A48 /* SQLite.h */,
@@ -368,6 +396,8 @@
 				5FA544641651169A00DB0A48 /* TestData.m */,
 				5F62D697165F666C00F5B973 /* IAP.h */,
 				5F62D698165F666C00F5B973 /* IAP.m */,
+				2A2D37861823A0CF00369A24 /* XML.h */,
+				2A2D37871823A0CF00369A24 /* XML.m */,
 			);
 			name = my_library;
 			sourceTree = "<group>";
@@ -375,6 +405,7 @@
 		5FF350C8164F7DD400CD51D9 /* 3rd_library */ = {
 			isa = PBXGroup;
 			children = (
+				2A2D377B1823A05B00369A24 /* XMLWriter-Reader */,
 				5FF350D3164F7EB400CD51D9 /* AFNetWorking */,
 				5FF350CE164F7E9600CD51D9 /* JSONKit */,
 				5FF350C9164F7E0500CD51D9 /* Reachablity */,
@@ -514,6 +545,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A2D37851823A0A400369A24 /* README in Resources */,
 				5FD9E24B164E808400278AF3 /* InfoPlist.strings in Resources */,
 				5FD9E275164E8D2600278AF3 /* test.png in Resources */,
 				5F999560164FD59E0039FAE8 /* rootViewController.xib in Resources */,
@@ -525,6 +557,7 @@
 				5FA1A264165C04170003FABF /* more_selected.png in Resources */,
 				5FA1A266165C04170003FABF /* search_selected.png in Resources */,
 				5FA1A268165C04170003FABF /* store_selected.png in Resources */,
+				2A2D37841823A0A400369A24 /* README.md in Resources */,
 				5FA1A26E165C13CA0003FABF /* bookmark_unselected.png in Resources */,
 				5FA1A26F165C13CA0003FABF /* more_unselected.png in Resources */,
 				5FA1A270165C13CA0003FABF /* search_unselected.png in Resources */,
@@ -569,10 +602,12 @@
 				5FF35101164F945D00CD51D9 /* Cache.m in Sources */,
 				5FD9E24D164E808400278AF3 /* main.m in Sources */,
 				5FD9E251164E808400278AF3 /* WLAppDelegate.m in Sources */,
+				2A2D37881823A0CF00369A24 /* XML.m in Sources */,
 				5FF350C0164F6C5F00CD51D9 /* URLCache.m in Sources */,
 				5FF350C5164F7CD400CD51D9 /* Network.m in Sources */,
 				5FF350CC164F7E4700CD51D9 /* Reachability.m in Sources */,
 				5FF350E7164F7EDF00CD51D9 /* AFHTTPClient.m in Sources */,
+				2A2D37811823A09B00369A24 /* XMLWriter.m in Sources */,
 				5FF350E9164F7EDF00CD51D9 /* AFHTTPRequestOperation.m in Sources */,
 				5FF350EB164F7EDF00CD51D9 /* AFImageRequestOperation.m in Sources */,
 				5FF350ED164F7EDF00CD51D9 /* AFJSONRequestOperation.m in Sources */,
@@ -600,6 +635,7 @@
 				5FC55594165A89D6009537EA /* TabBarViewController.m in Sources */,
 				5F5609DE165A96F800E9989D /* TabBarView.m in Sources */,
 				5FA1A277165C64D70003FABF /* NavigationController.m in Sources */,
+				2A2D377E1823A08F00369A24 /* XMLReader.m in Sources */,
 				5F62D699165F666C00F5B973 /* IAP.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
