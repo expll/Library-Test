@@ -78,6 +78,32 @@ static inline NSString *documentPathForKey(NSString *key)
 #pragma mark -
 #pragma mark Public Methods
 
+- (NSString *)documentDictionary
+{
+    return DocumentDirectory();
+}
+
+- (NSDictionary *)getAppInfo
+{
+    return [[NSBundle mainBundle] infoDictionary];
+}
+
+- (NSString *)getBundleFile: (NSString *)fileName
+{
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@""];
+    return filePath;
+}
+
+- (NSString *)getSandboxFile
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+
+    //打印结果如下：
+    ///Users/apple/Library/Application Support/iPhone Simulator/4.3/Applications/550AF26D-174B-42E6-881B-B7499FAA32B7/Documents
+}
+
+
 - (void)clearDocument
 {
 
