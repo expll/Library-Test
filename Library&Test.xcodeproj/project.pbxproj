@@ -54,7 +54,7 @@
 		5FD9E25B164E808500278AF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD9E242164E808400278AF3 /* Foundation.framework */; };
 		5FD9E263164E808500278AF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9E261164E808500278AF3 /* InfoPlist.strings */; };
 		5FD9E266164E808500278AF3 /* OCUnitTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD9E265164E808500278AF3 /* OCUnitTestTests.m */; };
-		5FD9E271164E83DE00278AF3 /* Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD9E270164E83DE00278AF3 /* Cache.m */; };
+		5FD9E271164E83DE00278AF3 /* ArchivingCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD9E270164E83DE00278AF3 /* ArchivingCache.m */; };
 		5FD9E275164E8D2600278AF3 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9E274164E8D2600278AF3 /* test.png */; };
 		5FD9E276164E8D2600278AF3 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9E274164E8D2600278AF3 /* test.png */; };
 		5FF350C0164F6C5F00CD51D9 /* URLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF350BF164F6C5F00CD51D9 /* URLCache.m */; };
@@ -83,7 +83,7 @@
 		5FF350F8164F7EDF00CD51D9 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF350E6164F7EDF00CD51D9 /* UIImageView+AFNetworking.m */; };
 		5FF350FA164F841300CD51D9 /* Constant.h in Resources */ = {isa = PBXBuildFile; fileRef = 5FF350F9164F7FE300CD51D9 /* Constant.h */; };
 		5FF35100164F93B400CD51D9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF350FF164F93B400CD51D9 /* SystemConfiguration.framework */; };
-		5FF35101164F945D00CD51D9 /* Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD9E270164E83DE00278AF3 /* Cache.m */; };
+		5FF35101164F945D00CD51D9 /* ArchivingCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD9E270164E83DE00278AF3 /* ArchivingCache.m */; };
 		5FF35102164FC48F00CD51D9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF350FF164F93B400CD51D9 /* SystemConfiguration.framework */; };
 		5FFDFA1F1653E6A1007E05B6 /* Object_single.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDFA1D1653E6A1007E05B6 /* Object_single.xcdatamodeld */; };
 		5FFDFA241653E738007E05B6 /* _Single.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDFA211653E737007E05B6 /* _Single.m */; };
@@ -171,8 +171,8 @@
 		5FD9E262164E808500278AF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5FD9E264164E808500278AF3 /* OCUnitTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCUnitTestTests.h; sourceTree = "<group>"; };
 		5FD9E265164E808500278AF3 /* OCUnitTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCUnitTestTests.m; sourceTree = "<group>"; };
-		5FD9E26F164E83DE00278AF3 /* Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cache.h; sourceTree = "<group>"; };
-		5FD9E270164E83DE00278AF3 /* Cache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cache.m; sourceTree = "<group>"; };
+		5FD9E26F164E83DE00278AF3 /* ArchivingCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchivingCache.h; sourceTree = "<group>"; };
+		5FD9E270164E83DE00278AF3 /* ArchivingCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchivingCache.m; sourceTree = "<group>"; };
 		5FD9E274164E8D2600278AF3 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		5FF350BE164F6C5F00CD51D9 /* URLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLCache.h; sourceTree = "<group>"; };
 		5FF350BF164F6C5F00CD51D9 /* URLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLCache.m; sourceTree = "<group>"; };
@@ -388,8 +388,8 @@
 				5FF350C4164F7CD400CD51D9 /* Network.m */,
 				5FF350BE164F6C5F00CD51D9 /* URLCache.h */,
 				5FF350BF164F6C5F00CD51D9 /* URLCache.m */,
-				5FD9E26F164E83DE00278AF3 /* Cache.h */,
-				5FD9E270164E83DE00278AF3 /* Cache.m */,
+				5FD9E26F164E83DE00278AF3 /* ArchivingCache.h */,
+				5FD9E270164E83DE00278AF3 /* ArchivingCache.m */,
 				5F999566164FDA8A0039FAE8 /* UnitTest.h */,
 				5F999567164FDA8A0039FAE8 /* UnitTest.m */,
 				5FA544631651169A00DB0A48 /* TestData.h */,
@@ -599,7 +599,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FF35101164F945D00CD51D9 /* Cache.m in Sources */,
+				5FF35101164F945D00CD51D9 /* ArchivingCache.m in Sources */,
 				5FD9E24D164E808400278AF3 /* main.m in Sources */,
 				5FD9E251164E808400278AF3 /* WLAppDelegate.m in Sources */,
 				2A2D37881823A0CF00369A24 /* XML.m in Sources */,
@@ -645,7 +645,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FD9E266164E808500278AF3 /* OCUnitTestTests.m in Sources */,
-				5FD9E271164E83DE00278AF3 /* Cache.m in Sources */,
+				5FD9E271164E83DE00278AF3 /* ArchivingCache.m in Sources */,
 				5FF350C1164F6C5F00CD51D9 /* URLCache.m in Sources */,
 				5FF350C6164F7CD400CD51D9 /* Network.m in Sources */,
 				5FF350CD164F7E4700CD51D9 /* Reachability.m in Sources */,

@@ -9,7 +9,7 @@
 #import "UnitTest.h"
 #import "TestData.h"
 
-#import "Cache.h"
+#import "ArchivingCache.h"
 #import "URLCache.h"
 #import "Network.h"
 #import "SQLite.h"

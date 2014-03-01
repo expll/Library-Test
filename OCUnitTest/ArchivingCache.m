@@ -6,7 +6,7 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "Cache.h"
+#import "ArchivingCache.h"
 #import <sqlite3.h>
 #import <UIKit/UIKit.h>
 
@@ -17,7 +17,7 @@ static inline NSString *CacheDirectory()
 	if(!_CacheDirectory)
     {
 		NSString *cachesDirectory = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-		_CacheDirectory = [[[cachesDirectory stringByAppendingPathComponent:[[NSProcessInfo processInfo] processName]] stringByAppendingPathComponent:@"__Cache"] copy];
+		_CacheDirectory = [[[cachesDirectory stringByAppendingPathComponent:[[NSProcessInfo processInfo] processName]] stringByAppendingPathComponent:@"Cache"] copy];
         
 	}
     
@@ -44,7 +44,7 @@ static inline NSString *cachePathForKey(NSString *key)
 
 
 
-@interface Cache ()
+@interface ArchivingCache ()
 
 - (void)setCacheData:(NSData*)data forKey:(NSString*)key;
 - (void)removeItemFromCache:(NSString*)key;
@@ -60,7 +60,7 @@ static inline NSString *cachePathForKey(NSString *key)
 
 #pragma mark -
 
-@implementation Cache
+@implementation ArchivingCache
 
 
 + (id)sharedCache

@@ -7,7 +7,7 @@
 //
 
 #import "OCUnitTestTests.h"
-#import "Cache.h"
+#import "ArchivingCache.h"
 #import "URLCache.h"
 #import "NetworkApi.h"
 #import "Reachability.h"

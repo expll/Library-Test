@@ -7,7 +7,7 @@
 //
 
 #import "URLCache.h"
-#import "Cache.h"
+#import "ArchivingCache.h"
 
 @implementation URLCache
 
@@ -36,9 +36,9 @@
     NSString *pathString = [[request URL] absoluteString];
     
     if([self isNeedToCache:pathString] 
-       && [[Cache sharedCache] isCachedForKey:pathString])
+       && [[ArchivingCache sharedCache] isCachedForKey:pathString])
     {
-        NSData *data =(NSData *)[[Cache sharedCache] objectForKey:pathString];
+        NSData *data =(NSData *)[[ArchivingCache sharedCache] objectForKey:pathString];
         NSURLResponse *response = [[NSURLResponse alloc] initWithURL:[request URL]
                                                             MIMEType:[NSString stringWithFormat:@"image/%@",[pathString pathExtension]]
                                                expectedContentLength:[data length]
@@ -61,7 +61,7 @@
     
     if([self isNeedToCache:pathString])
     {
-        [[Cache sharedCache] setObject:cachedResponse.data forKey:pathString];
+        [[ArchivingCache sharedCache] setObject:cachedResponse.data forKey:pathString];
         
         NSLog(@"%@",pathString);
     }
